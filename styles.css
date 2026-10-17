@@ -218,6 +218,12 @@ blockquote footer{font-size:13px;line-height:1.7;max-width:60ch}
 address{font-style:normal;margin-bottom:24px}
 .text-page-heading{padding-block:72px 48px}
 .text-page-heading h1{margin-bottom:28px}
+.breadcrumbs{padding-top:24px;font-size:13px;line-height:1.6}
+.breadcrumbs ol{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;list-style:none;padding:0;margin:0}
+.breadcrumbs li{display:flex;align-items:center;gap:12px;min-height:44px}
+.breadcrumbs li+li:before{content:'/';color:var(--muted)}
+.breadcrumbs a{display:inline-flex;align-items:center;min-height:44px}
+.breadcrumbs+.page-heading,.breadcrumbs+.text-page-heading{padding-top:24px}
 .policy-content{padding-bottom:64px}
 .policy-content>section{max-width:780px;margin-bottom:48px}
 .policy-content h2{font-size:32px;margin-bottom:24px}
