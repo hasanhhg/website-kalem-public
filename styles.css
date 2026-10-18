@@ -234,6 +234,38 @@ address{font-style:normal;margin-bottom:24px}
 
 @media(min-width:768px) and (max-width:1023px){.home-hero-photo{position:relative;height:auto;aspect-ratio:16/9}.home-hero-photo img{object-position:50% 50%}.home-hero:before{background:none}.home-hero-inner{display:block;min-height:0;padding-block:40px 64px}.home-hero-copy{max-width:650px}.home-hero h1{max-width:600px;font-size:46px}.home-hero-copy>p{max-width:580px}.page-image .photo img[src*="jongeren-gastgesprek"]{object-position:50% 61%}}
 @media(max-width:389px){.key-facts{grid-template-columns:1fr}.key-facts dt{font-size:30px}.key-facts dd{font-size:14px;max-width:35ch}.home-hero h1{font-size:38px}.hero-actions .button{width:100%}.footer-main{grid-template-columns:1fr}.footer-about{grid-column:auto}.footer-bottom{flex-direction:column;gap:8px}}
+.photo-collection{border-top:1px solid var(--line)}
+.photo-collection .section-heading{margin-bottom:32px}
+.photo-gallery{columns:3;column-gap:24px}
+.photo-gallery .gallery-photo{break-inside:avoid;margin:0 0 28px}
+.gallery-photo img{height:auto;aspect-ratio:auto;object-fit:contain}
+.gallery-photo figcaption{font-size:13px;line-height:1.55;margin-top:12px;color:var(--ink)}
+.photo-link{display:block;cursor:zoom-in;background:var(--paper);outline-offset:5px}
+.photo-link:hover img{opacity:.92}
+.gallery-more{margin-top:12px}
+.gallery-more summary{cursor:pointer;width:fit-content;min-height:48px;padding:12px 20px;border:1px solid var(--navy);color:var(--navy);font-size:14px;font-weight:650;line-height:1.6}
+.gallery-more summary:hover{background:var(--paper)}
+.gallery-hide,.gallery-more[open] .gallery-show{display:none}
+.gallery-more[open] .gallery-hide{display:inline}
+.gallery-rest{margin-top:32px}
+.photo-viewer-open{overflow:hidden}
+.photo-viewer:not([open]){display:none}
+.photo-viewer[open]{display:flex;flex-direction:column;gap:16px;width:min(1120px,calc(100vw - 40px));max-width:none;max-height:calc(100dvh - 32px);padding:24px;border:0;background:var(--navy);color:#fff;overflow:auto}
+.photo-viewer::backdrop{background:#071a2be6}
+.photo-viewer-heading{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.photo-viewer-heading h2{font-family:'Public Sans',Arial,sans-serif;font-size:20px;line-height:1.4;color:#fff;margin:0}
+.photo-viewer .button{justify-content:center;min-height:44px;font-size:13px;padding:10px 16px}
+.photo-viewer-frame{height:min(62dvh,680px);min-height:160px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.photo-viewer-frame img{width:100%;height:100%;object-fit:contain}
+.photo-viewer #photo-viewer-caption{font-size:15px;line-height:1.5;margin:0}
+.photo-viewer-controls{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center}
+.photo-viewer-controls>button:first-child{justify-self:start}
+.photo-viewer-controls>button:last-child{justify-self:end}
+.photo-viewer-controls p{font-size:12px;margin:0;text-align:center}
+.photo-viewer :focus-visible{outline-color:#fff}
+.wide-image .photo img[src*="tekenen-aan-tafel-k0465"]{max-height:none;height:auto;object-fit:contain}
+.story-recaps img[src*="samen-aan-de-ontbijttafel-k0774"]{object-position:50% 25%}
+@media(max-width:767px){.photo-gallery{columns:2;column-gap:16px}.photo-gallery .gallery-photo{margin-bottom:24px}.gallery-photo figcaption{font-size:12px}.photo-viewer[open]{width:calc(100vw - 24px);padding:16px;gap:12px}.photo-viewer-heading{gap:16px}.photo-viewer-heading h2{font-size:17px}.photo-viewer-frame{height:57dvh}.photo-viewer .button{padding-inline:10px;font-size:12px}.photo-viewer-controls{gap:8px}.photo-viewer-controls p{font-size:11px}}
 .consent-banner{position:fixed;inset:auto 0 0;z-index:40;background:#fff;color:var(--ink);border-top:1px solid var(--line);box-shadow:0 -4px 24px #0e2a4714;max-height:80vh;overflow:auto}
 .consent-banner[hidden],.cookie-settings[hidden]{display:none}
 .consent-layout{display:flex;align-items:center;justify-content:space-between;gap:40px;padding-block:24px}
