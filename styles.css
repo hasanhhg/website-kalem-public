@@ -238,7 +238,7 @@ address{font-style:normal;margin-bottom:24px}
 .photo-collection .section-heading{margin-bottom:32px}
 .photo-gallery{columns:3;column-gap:24px}
 .photo-gallery .gallery-photo{break-inside:avoid;margin:0 0 28px}
-.gallery-photo img{height:auto;aspect-ratio:auto;object-fit:contain}
+.gallery-photo img{height:auto;object-fit:contain}
 .gallery-photo figcaption{font-size:13px;line-height:1.55;margin-top:12px;color:var(--ink)}
 .photo-link{display:block;cursor:zoom-in;background:var(--paper);outline-offset:5px}
 .photo-link:hover img{opacity:.92}
