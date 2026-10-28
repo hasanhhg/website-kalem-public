@@ -58,7 +58,7 @@
     const link = event.target.closest('a[data-photo-view]');
     if (!link || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
-    photos = [...link.closest('[data-photo-collection]').querySelectorAll('a[data-photo-view]')];
+    photos = [...(link.closest('[data-photo-collection]') || link.closest('main')).querySelectorAll('a[data-photo-view]')];
     opener = link;
     show(photos.indexOf(link));
     viewer.showModal();

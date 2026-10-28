@@ -1,3 +1,17 @@
+.activity-block .topic-layout{padding-block:64px 28px}
+.activity-block .topic-photo{max-width:var(--photo-width)}
+.activity-block .topic-reverse .topic-photo{margin-left:auto}
+.activity-block .topic-photo img{max-height:360px;object-fit:contain}
+.page-image .photo img[src*="met-de-groep-aan-de-slag-k0368"],.page-image .photo img[src*="de-groep-bij-elkaar-k0537"]{aspect-ratio:1080/565;max-height:none}
+.approach-summary{padding-block:64px}
+.parent-school-route{margin-top:24px;font-size:13px!important}
+.parent-school-route .text-link{color:#fff;font-size:13px}
+.activity-gallery{width:min(1200px,calc(100% - 80px));margin-inline:auto;padding-bottom:64px}
+.activity-gallery .gallery-preview{display:grid;grid-template-columns:repeat(4,minmax(0,160px));gap:16px}
+.activity-gallery .gallery-preview .gallery-photo{margin:0}
+.activity-gallery .gallery-preview img{height:100px;object-fit:cover}
+.activity-gallery .gallery-preview figcaption{display:none}
+@media(max-width:767px){.activity-gallery{width:calc(100% - 40px)}.activity-gallery .gallery-preview{grid-template-columns:repeat(2,minmax(0,1fr))}.activity-gallery .gallery-preview .gallery-photo:nth-child(n+3){display:none}.activity-gallery:has(.gallery-more[open]) .gallery-preview .gallery-photo:nth-child(n+3){display:block}.activity-block .topic-photo img{max-height:360px}.activity-block .topic-reverse .topic-photo{margin-left:0}}
 @font-face{font-family:'Source Serif 4';src:url('assets/fonts/source-serif-4.woff2') format('woff2');font-weight:400 700;font-style:normal;font-display:swap}
 @font-face{font-family:'Public Sans';src:url('assets/fonts/public-sans.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
 :root{--navy:#0e2a47;--ink:#1b232a;--blue:#173f8a;--muted:#52616d;--paper:#f6f4ef;--line:#d9dee4;--space:clamp(72px,7.8vw,112px);color-scheme:light}
@@ -74,7 +88,7 @@ p:last-child{margin-bottom:0}
 .surface,.practical-band{background:var(--paper)}
 .facts-strip{padding-block:44px 56px}
 .facts-title{font-family:'Public Sans',Arial,sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.12em;margin-bottom:32px}
-.key-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;margin:0}
+.key-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin:0}
 .key-facts>div{border-left:1px solid var(--line);padding-left:24px}
 .key-facts>div:first-child{padding-left:0;border:0}
 .key-facts dt{font:600 40px/1.15 'Source Serif 4',Georgia,serif;letter-spacing:-.02em;color:var(--navy);margin-bottom:12px}
@@ -236,6 +250,15 @@ address{font-style:normal;margin-bottom:24px}
 @media(min-width:768px) and (max-width:1023px){.home-hero-photo{position:relative;height:auto;aspect-ratio:16/9}.home-hero-photo img{object-position:50% 50%}.home-hero:before{background:none}.home-hero-inner{display:block;min-height:0;padding-block:40px 64px}.home-hero-copy{max-width:650px}.home-hero h1{max-width:600px;font-size:46px}.home-hero-copy>p{max-width:580px}.page-image .photo img[src*="jongeren-gastgesprek"]{object-position:50% 61%}}
 @media(max-width:389px){.key-facts{grid-template-columns:1fr}.key-facts dt{font-size:30px}.key-facts dd{font-size:14px;max-width:35ch}.home-hero h1{font-size:38px}.hero-actions .button{width:100%}.footer-main{grid-template-columns:1fr}.footer-about{grid-column:auto}.footer-bottom{flex-direction:column;gap:8px}}
 .photo-collection{border-top:1px solid var(--line)}
+.jump-menu{display:flex;flex-wrap:wrap;gap:4px 28px;padding-block:24px;border-bottom:1px solid var(--line)}
+.jump-menu .text-link{font-size:13px;gap:12px}
+.activity-block .topic-layout{padding-bottom:40px}
+.activity-block .photo-collection{padding-top:0;border-top:0}
+.activity-block .photo-collection .section-heading{margin-bottom:24px}
+.activity-block .photo-collection .section-heading p{font-size:15px;margin-top:12px}
+.chair-band h2{font-size:30px;margin-bottom:20px}
+.chair-band .text-link{color:#fff}
+.key-facts .text-link{display:flex;font-size:12px;justify-content:flex-start;gap:12px}
 .photo-collection .section-heading{margin-bottom:32px}
 .photo-gallery{columns:3;column-gap:24px}
 .photo-gallery .gallery-photo{break-inside:avoid;margin:0 0 28px}
